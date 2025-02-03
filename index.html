@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tens & Ones Addition Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Tens & Ones Addition</h1>
+        <p class="question">Solve: <span id="num1"></span> + <span id="num2"></span></p>
+
+        <div class="step">
+            <p>Add the tens: <span id="tens1"></span> + <span id="tens2"></span> =</p>
+            <input type="number" id="tensAnswer">
+            <button onclick="checkTens()">Check</button>
+            <p class="feedback" id="tensFeedback"></p>
+        </div>
+
+        <div class="step">
+            <p>Add the ones: <span id="ones1"></span> + <span id="ones2"></span> =</p>
+            <input type="number" id="onesAnswer">
+            <button onclick="checkOnes()">Check</button>
+            <p class="feedback" id="onesFeedback"></p>
+        </div>
+
+        <div class="step">
+            <p>Total sum: <span id="num1"></span> + <span id="num2"></span> =</p>
+            <input type="number" id="totalAnswer">
+            <button onclick="checkTotal()">Submit</button>
+            <p class="feedback" id="totalFeedback"></p>
+        </div>
+
+        <button class="new-problem" onclick="generateProblem()">New Problem</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
