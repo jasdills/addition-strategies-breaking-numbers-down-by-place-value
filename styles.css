@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center;
+    background-color: #1e1e2e;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    background: #27293d;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.step {
+    margin: 15px 0;
+}
+
+input {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+    background-color: #fff;
+    color: black;
+}
+
+button {
+    background: #ffcc00;
+    border: none;
+    font-size: 22px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 120px;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+.feedback {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.new-problem {
+    display: block;
+    margin: 20px auto;
+    background: #ff4444;
+    font-size: 24px;
+}
+
+.new-problem:hover {
+    background: #ff2222;
+}
+
+.correct {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.wrong {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 22px;
+        width: 80px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 110px;
+    }
+
+    .game-container {
+        width: 95%;
+    }
+}
